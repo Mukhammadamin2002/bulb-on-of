@@ -3,7 +3,19 @@
 <head>
 	<title>JS-homework</title>
 </head>
-<body>
+   <body>
+     <img  id="bulb" src="image/.off.png" onclick="switchBulb()" width="220" height="250">
+     <script>
+     	function switchBulb() {
+		let bulb = document.getElementById('bulb');
 
-</body>
+		if (bulb.src.match('bulb-on')) {
+			bulb.src = 'image/.off.png';
+		}
+		if (bulb.src.match('bulb-off'))
+            bulb.src = "image/.on.png";
+	}
+
+	</script>
+   </body>
 </html>
